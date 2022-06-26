@@ -47,27 +47,27 @@ const Formu = () => {
           {() => (
             <Form className='mt-10'>
               <div className='mb-4'>
-                <label className='text-gray-800' htmlFor='name'>Name:</label>
+                <label className='text-gray-600 font-semibold ml-1' htmlFor='name'>Name:</label>
                 <Field placeholder='Client Name' id='name' type='text' name='name' className='mt-2 block w-full p-3 bg-gray-50'/>
                 <ErrorMessage name='name' component='div' className='bg-red-600 text-center my-4 text-white font-bold p-3 uppercase'/>
               </div>
               <div className='mb-4'>
-                <label className='text-gray-800' htmlFor='business'>Business:</label>
+                <label className='text-gray-600 font-semibold ml-1' htmlFor='business'>Business:</label>
                 <Field placeholder='Client Business' id='business' type='text' name='business' className='mt-2 block w-full p-3 bg-gray-50'/>
                 <ErrorMessage name='business' component='div' className='bg-red-600 text-center my-4 text-white font-bold p-3 uppercase'/>
               </div>
               <div className='mb-4'>
-                <label className='text-gray-800' htmlFor='email'>Email:</label>
+                <label className='text-gray-600 font-semibold ml-1' htmlFor='email'>Email:</label>
                 <Field placeholder='Client Email' id='email' type='email' name='email' className='mt-2 block w-full p-3 bg-gray-50'/>
                 <ErrorMessage name='email' component='div' className='bg-red-600 text-center my-4 text-white font-bold p-3 uppercase'/>
               </div>
               <div className='mb-4'>
-                <label className='text-gray-800' htmlFor='phone'>Phone:</label>
+                <label className='text-gray-600 font-semibold ml-1' htmlFor='phone'>Phone:</label>
                 <Field placeholder='Client Phone' id='phone' type='tel' name='phone' className='mt-2 block w-full p-3 bg-gray-50'/>
                 <ErrorMessage name='phone' component='div' className='bg-red-600 text-center my-4 text-white font-bold p-3 uppercase'/>
               </div>
               <div className='mb-4'>
-                <label className='text-gray-800' htmlFor='notes'>Notes:</label>
+                <label className='text-gray-600 font-semibold ml-1' htmlFor='notes'>Notes:</label>
                 <Field as='textarea' placeholder='Client Notes' id='notes' type='text' name='notes' className='mt-2 block w-full p-3 bg-gray-50 resize-none h-40'/>
                 <ErrorMessage name='notes' component='div' className='bg-red-600 text-center my-4 text-white font-bold p-3 uppercase'/>
               </div>
