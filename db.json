@@ -1,0 +1,28 @@
+{
+  "clients": [
+    {
+      "name": "David",
+      "business": "NOW",
+      "email": "david@now.tienda",
+      "phone": "693333353",
+      "notes": "Soy el king",
+      "id": 1
+    },
+    {
+      "name": "Ali",
+      "business": "Pelotuda",
+      "email": "ali@pelotuda.com",
+      "phone": "666666666",
+      "notes": "Ali es una pelotuda",
+      "id": 2
+    },
+    {
+      "name": "Papa",
+      "business": "Drones Andaluces",
+      "email": "papa@papa.com",
+      "phone": "687580605",
+      "notes": "Drones",
+      "id": 3
+    }
+  ]
+}
