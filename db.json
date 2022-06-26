@@ -23,6 +23,22 @@
       "phone": "687580605",
       "notes": "Drones",
       "id": 3
+    },
+    {
+      "name": "Pikachu",
+      "business": "Pokemon",
+      "email": "pikachu@pokemon.com",
+      "phone": "666777888",
+      "notes": "Pika Pika",
+      "id": 4
+    },
+    {
+      "name": "Sin notas",
+      "business": "El boss",
+      "email": "boss@notas.com",
+      "phone": "685746383",
+      "notes": "",
+      "id": 5
     }
   ]
 }
