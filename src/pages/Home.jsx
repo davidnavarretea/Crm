@@ -4,6 +4,7 @@ import '../styles/Spinner.css'
 const Home = () => {
   const [clients, setClients] = useState([])
   const [loading, setLoading] = useState(true)
+  const [deleting, setDeleting] = useState(false)
   useEffect(() => {
     const getAPIClients = async () => {
       try {
@@ -21,6 +22,7 @@ const Home = () => {
   const handleDelete = async id => {
     const confirmar = confirm('Remove Client?')
     if(confirmar){
+      setDeleting(true)
       try {
         const url = `http://localhost:4000/clients/${id}`
         const request = await fetch(url, {
@@ -29,6 +31,7 @@ const Home = () => {
         await request.json()
         const deletingClient = clients.filter(client => client.id !== id)
         setClients(deletingClient)
+        setDeleting(false)
       } catch (error) {
         
       }
@@ -70,6 +73,18 @@ const Home = () => {
                     ))}
                   </tbody>
                 </table>
+                {deleting && (
+                  <div className="flex justify-center items-center h-20">
+                    <div className="sk-chase">
+                        <div className="sk-chase-dot"></div>
+                        <div className="sk-chase-dot"></div>
+                        <div className="sk-chase-dot"></div>
+                        <div className="sk-chase-dot"></div>
+                        <div className="sk-chase-dot"></div>
+                        <div className="sk-chase-dot"></div>
+                    </div>
+                  </div>
+                )}
             </>
         )}
     </>

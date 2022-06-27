@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
-const Formu = ({client, loading}) => {
+const Formu = ({client, loading, setAdding}) => {
   const navigate = useNavigate()
   const newClientSchema = Yup.object().shape({
     name: Yup.string().required('Fill name field').min(3,'Name is too short'),
@@ -11,6 +11,7 @@ const Formu = ({client, loading}) => {
     notes: Yup.string(),
   })
   const handleSubmit = async (values) => {
+    setAdding(true)
     try {
       let request
       if(client.id){
@@ -34,6 +35,7 @@ const Formu = ({client, loading}) => {
       }
       await request.json()
       navigate('/clients')
+      setAdding(false)
     } catch (error) {
       console.log(error)
     }
