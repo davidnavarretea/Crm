@@ -18,7 +18,22 @@ const Home = () => {
     }
     getAPIClients()
   }, [])
-  
+  const handleDelete = async id => {
+    const confirmar = confirm('Remove Client?')
+    if(confirmar){
+      try {
+        const url = `http://localhost:4000/clients/${id}`
+        const request = await fetch(url, {
+          method: 'DELETE'
+        })
+        await request.json()
+        const deletingClient = clients.filter(client => client.id !== id)
+        setClients(deletingClient)
+      } catch (error) {
+        
+      }
+    }
+  }
   return (
     <>
       {loading ?
@@ -50,6 +65,7 @@ const Home = () => {
                       <Client
                         key={client.id}
                         client={client}
+                        handleDelete={handleDelete}
                       />
                     ))}
                   </tbody>
