@@ -63,7 +63,10 @@ const Home = () => {
                     <div className="sk-chase-dot"></div>
                 </div>
             </div> : (
-              <>
+              Object.keys(clients).length === 0 ? (
+                <h1 className="font-black text-4xl text-blue-900">No Clients Yet</h1>
+              ) : (
+                <>
                   <h1 className="font-black text-4xl text-blue-900">Clients</h1>
                   <p className="mt-3 text-gray-600 font-bold">Manage your clients</p>
                   <table className="w-full mt-5 table-auto bg-white shadow">
@@ -86,7 +89,8 @@ const Home = () => {
                       ))}
                     </tbody>
                   </table>
-              </>
+                </>
+              )
             )}
         </>
       )}
