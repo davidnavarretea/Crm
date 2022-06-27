@@ -31,22 +31,6 @@
       "phone": "666777888",
       "notes": "Pika Pika",
       "id": 4
-    },
-    {
-      "name": "Sin notas",
-      "business": "El boss",
-      "email": "boss@notas.com",
-      "phone": "685746383",
-      "notes": "",
-      "id": 5
-    },
-    {
-      "name": "Lisa",
-      "business": "Ford",
-      "email": "ricardo@ford.com",
-      "phone": "666888444",
-      "notes": "Ali es una pelotuda",
-      "id": 6
     }
   ]
 }
