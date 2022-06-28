@@ -10,7 +10,7 @@ const Client = ({client, handleDelete}) => {
         <td className="p-3 text-center text-gray-800 font-semibold">{phone}</td>
         <td className="p-3 text-center text-gray-800 font-semibold">
             <button type="button" className="bg-green-900 hover:bg-green-800 text-white block w-full p-2 uppercase font-bold text-xs" onClick={() => navigate(`${id}`)}>View</button>
-            <button type="button" className="bg-blue-900 hover:bg-blue-800 text-white block w-full p-2 uppercase font-bold text-xs" onClick={() => navigate(`/clients/edit/${id}`)}>Edit</button>
+            <button type="button" className="bg-blue-900 hover:bg-blue-800 text-white block w-full p-2 uppercase font-bold text-xs" onClick={() => navigate(`/edit/${id}`)}>Edit</button>
             <button type="button" className="bg-red-900 hover:bg-red-800 text-white block w-full p-2 uppercase font-bold text-xs" onClick={() => handleDelete(id)}>Delete</button>
         </td>
     </tr>

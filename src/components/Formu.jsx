@@ -34,7 +34,7 @@ const Formu = ({client, loading, setAdding}) => {
         })
       }
       await request.json()
-      navigate('/clients')
+      navigate('/')
       setAdding(false)
     } catch (error) {
       console.log(error)
